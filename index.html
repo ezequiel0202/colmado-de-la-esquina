@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Colmado Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#393939",
+                      "surface-container-highest": "#353534",
+                      "on-background": "#e5e2e1",
+                      "on-primary-fixed": "#002113",
+                      "primary-fixed": "#6ffbbe",
+                      "on-tertiary": "#303030",
+                      "on-surface-variant": "#bbcabf",
+                      "on-surface": "#e5e2e1",
+                      "inverse-on-surface": "#313030",
+                      "on-secondary-fixed": "#341100",
+                      "on-secondary-container": "#4a1c00",
+                      "surface-bright": "#393939",
+                      "surface-container-high": "#2a2a2a",
+                      "surface-tint": "#4edea3",
+                      "secondary-container": "#ec6a06",
+                      "on-secondary-fixed-variant": "#783200",
+                      "tertiary-container": "#a4a2a2",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-primary": "#003824",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "tertiary-fixed": "#e5e2e1",
+                      "error-container": "#93000a",
+                      "secondary-fixed": "#ffdbca",
+                      "secondary-fixed-dim": "#ffb690",
+                      "surface-variant": "#353534",
+                      "secondary": "#ffb690",
+                      "on-primary-container": "#00422b",
+                      "surface": "#131313",
+                      "on-error": "#690005",
+                      "surface-container": "#201f1f",
+                      "on-error-container": "#ffdad6",
+                      "inverse-primary": "#006c49",
+                      "primary": "#4edea3",
+                      "inverse-surface": "#e5e2e1",
+                      "outline-variant": "#3c4a42",
+                      "outline": "#86948a",
+                      "on-primary-fixed-variant": "#005236",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "tertiary": "#c8c6c5",
+                      "surface-container-low": "#1c1b1b",
+                      "error": "#ffb4ab",
+                      "primary-fixed-dim": "#4edea3",
+                      "primary-container": "#10b981",
+                      "surface-dim": "#131313",
+                      "on-secondary": "#552100",
+                      "background": "#131313"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "48px",
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.03em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.02);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .quick-view-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .product-card:hover .quick-view-overlay {
+            opacity: 1;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col pt-[72px]">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary active:scale-95 duration-200" href="#">
+                Colmado
+            </a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md active:scale-95 duration-200" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:opacity-80 transition-opacity active:scale-95 duration-200" href="#">Categories</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:opacity-80 transition-opacity active:scale-95 duration-200" href="#">Cart</a>
+</nav>
+<div class="flex gap-4 items-center">
+<button aria-label="shopping_cart" class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button aria-label="person" class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] min-h-[400px] flex items-center justify-center mb-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-60" data-alt="A highly detailed, ultra-realistic close-up of premium, fresh organic groceries on a dark slate surface. Vibrant green avocados, bright red heirloom tomatoes, and crisp artisanal bread. The lighting is dramatic, high-contrast chiaroscuro, emphasizing the textures and vivid colors of the food against a deep, luxurious black background. Modern minimalism style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCA-86BlC-62qt3iL845dCeu1eVGvtPxaJh94mcoBGAHP898rcG6cBOuL_-VewUNUJe-tdyT-m7RYvK_jHswFIuLGsW56OqxqZ3G9Ov6gNWumUybqYbhXZ2FQxRy04y6bLDfuR1ph1U6NU6DpevUt7UkUU9RQpVWmV7Sw-uXHnp6RcaNPVCJ6IAxZrCkYbc59oCWROWXUPdbV2FlKBewIbKwN_nwvcEYOkMZ53AX-eY9PAz9C95YKVi26fzpPwnEupbofoXBQP5oA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col items-center">
+<h1 class="font-display-lg text-display-lg text-on-background mb-4 drop-shadow-lg max-w-3xl">
+                    Elevate Your Everyday <span class="text-primary">Essentials</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl drop-shadow-md">
+                    Curated selection of premium groceries, delivered with precision. Quality you can taste, service you can trust.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary-fixed px-8 py-3 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity active:scale-95">
+                        Shop Now
+                    </button>
+<button class="bg-transparent border border-white/20 text-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-white/5 transition-colors active:scale-95">
+                        Browse Categories
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Categories / Bento Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-24">
+<h2 class="font-headline-lg text-headline-lg mb-8">Featured Curations</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Frutas Frescas (Large Feature) -->
+<a class="md:col-span-8 group relative h-80 rounded-xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors" href="#">
+<div class="bg-cover bg-center w-full h-full opacity-70 group-hover:opacity-90 transition-opacity duration-500 group-hover:scale-105 transform" data-alt="A stunning, macro shot of a basket overflowing with exotic, dewy fresh fruits. Dragon fruit, starfruit, and perfectly ripe mangoes. Set against a dark, moody background with cinematic spotlighting that makes the vibrant colors pop. The aesthetic is high-end culinary photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCz3zO9MDKU1HekmlAsGeZ3NVZoTtzTMnmVZ7_UuTOJkzeZpHFT9BEzgtUzGwIy3COTJqna1zULwd_ebIMEjvhu9M1qtcwrQ-Jan5O4uhNiY2Ab96ahT1t7uVVNJ2UVqx21B7hXSKL4U2XVmMC12FbGg9eF-Mtc9v21_dhDotLv-srKISQGYlc3H8U69Q49k7P7jDK3HhkMgA_FO-IoZ1lNGObt3Hp6P4Esj89V2GLaFN4zsSCNMXumy6536Gt0NTfwsQij8fWbyg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Frutas Frescas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Hand-picked seasonal selections.</p>
+</div>
+</a>
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Bebidas Seleccionadas -->
+<a class="flex-1 group relative rounded-xl overflow-hidden border border-white/10 hover:border-primary/50 transition-colors" href="#">
+<div class="bg-cover bg-center w-full h-full opacity-70 group-hover:opacity-90 transition-opacity duration-500 group-hover:scale-105 transform" data-alt="A curated collection of artisanal beverages in sleek glass bottles, arranged elegantly on a dark marble countertop. Subtle backlighting highlights the amber and ruby liquids inside. High-contrast, premium, dark mode aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-l4wTE0pvn4V-O2pJ2QqOrqY7pjX_33baxTCh93ushhksof9L2JR0z4MZdiBBfvnG93quRfBU_v6cqcTdeEYXWyMEXT4O7GfW01D-zwHcVvpWaEui-DhF_FtSJIbpoX4e9_Ib4PKwEb9Nh4IsouH55VQzqNnQUO8wiixdyLU4N7xzxkfQuIAxGU0p8rokEEN7FVg4VuQyzr4BlyIOS4LHKHD551_jrOd5YuY7xhZIcw4DFnnxmLxMss4IuSWxc5fM4Q28i7VJIQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-on-background mb-1 group-hover:text-primary transition-colors">Bebidas Seleccionadas</h3>
+</div>
+</a>
+<!-- Ofertas del Día -->
+<a class="flex-1 group relative rounded-xl overflow-hidden border border-white/10 hover:border-secondary-container/50 transition-colors bg-surface-container-high" href="#">
+<div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-center z-10">
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-3" data-icon="local_offer">local_offer</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-1 group-hover:text-secondary-container transition-colors">Ofertas del Día</h3>
+<p class="font-label-sm text-label-sm text-secondary">Up to 40% off premium items</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest w-full py-12 border-t border-white/10 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-8">
+<div class="font-headline-sm text-headline-md font-bold text-primary">
+                Colmado
+            </div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</nav>
+<div class="font-label-sm text-label-sm text-on-surface-variant text-center">
+                © 2024 Colmado Premium Grocery. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
