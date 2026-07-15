@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Colmado Premium - Categories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#393939",
+                        "surface-container-highest": "#353534",
+                        "on-background": "#e5e2e1",
+                        "on-primary-fixed": "#002113",
+                        "primary-fixed": "#6ffbbe",
+                        "on-tertiary": "#303030",
+                        "on-surface-variant": "#bbcabf",
+                        "on-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "on-secondary-fixed": "#341100",
+                        "on-secondary-container": "#4a1c00",
+                        "surface-bright": "#393939",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#4edea3",
+                        "secondary-container": "#ec6a06",
+                        "on-secondary-fixed-variant": "#783200",
+                        "tertiary-container": "#a4a2a2",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary": "#003824",
+                        "on-tertiary-fixed": "#1b1b1c",
+                        "tertiary-fixed": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#ffdbca",
+                        "secondary-fixed-dim": "#ffb690",
+                        "surface-variant": "#353534",
+                        "secondary": "#ffb690",
+                        "on-primary-container": "#00422b",
+                        "surface": "#131313",
+                        "on-error": "#690005",
+                        "surface-container": "#201f1f",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#006c49",
+                        "primary": "#4edea3",
+                        "inverse-surface": "#e5e2e1",
+                        "outline-variant": "#3c4a42",
+                        "outline": "#86948a",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "tertiary": "#c8c6c5",
+                        "surface-container-low": "#1c1b1b",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#4edea3",
+                        "primary-container": "#10b981",
+                        "surface-dim": "#131313",
+                        "on-secondary": "#552100",
+                        "background": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "48px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10 shadow-sm transition-transform duration-300" id="navbar">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Colmado</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity active:scale-95 duration-200" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-80 transition-opacity active:scale-95 duration-200" href="#">Categories</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity active:scale-95 duration-200" href="#">Cart</a>
+</nav>
+<div class="flex gap-4 items-center">
+<button class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 active:scale-95 duration-200 flex items-center justify-center h-10 w-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; stroke-width: 2px;">search</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 active:scale-95 duration-200 flex items-center justify-center h-10 w-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; stroke-width: 2px;">person</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 active:scale-95 duration-200 flex items-center justify-center h-10 w-10 md:hidden">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; stroke-width: 2px;">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-[88px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full pb-16">
+<div class="py-8">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-2">Explore Categories</h1>
+<p class="text-on-surface-variant text-body-md font-body-md">Discover our premium selection of fresh and pantry essentials.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar / Horizontal Filters -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-[104px]">
+<div class="flex md:flex-col gap-2 overflow-x-auto hide-scrollbar pb-4 md:pb-0">
+<button class="px-4 py-2 rounded bg-primary text-on-primary-fixed font-label-md text-label-md whitespace-nowrap md:whitespace-normal text-left transition-colors">All Products</button>
+<button class="px-4 py-2 rounded bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md whitespace-nowrap md:whitespace-normal text-left hover:border-primary transition-colors">Víveres</button>
+<button class="px-4 py-2 rounded bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md whitespace-nowrap md:whitespace-normal text-left hover:border-primary transition-colors">Bebidas</button>
+<button class="px-4 py-2 rounded bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md whitespace-nowrap md:whitespace-normal text-left hover:border-primary transition-colors">Limpieza</button>
+<button class="px-4 py-2 rounded bg-surface-container-high border border-white/10 text-on-surface font-label-md text-label-md whitespace-nowrap md:whitespace-normal text-left hover:border-primary transition-colors">Carnes</button>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter auto-rows-fr">
+<!-- Product Card 1 -->
+<div class="group relative bg-surface-container-high border border-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-white/30 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+<div class="relative aspect-square overflow-hidden bg-surface">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A high-quality, perfectly lit studio shot of premium plantains arranged beautifully on a dark slate surface. The lighting is crisp and modern, emphasizing the texture and vibrant colors against the deep, ink-like dark mode background aesthetic. Minimalist composition with generous negative space. High-contrast premium digital grocery photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlxF80gfoj8SQ7CTqe8B4UTc18q_Jh5BHNeG3MN_OG91P8S8YYiAPv9CQecxwYrb_r_zzbZyn9pxPkxWOATQbT4ChCbwieo-JrZtFdSmGRP8MYU5TTnBJBQVXr5fvwOHAuRtl07Cf0062lImyoDu9ZW-SuoudSsq1PfUzvtbSMhceD3xlT5-FiYgz_n-4ZFAq8WOWqhkvg3n22lJzkKKbRZzG4s6Ip2vaiZJkWR6adatgOzzMTIxlUFCzz8NFb58aVzVUDLgzaBA"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+<button class="px-6 py-2 bg-transparent border border-white/30 rounded text-primary font-label-md text-label-md hover:border-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-grow relative">
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Plátano Verde Premium</h3>
+<p class="text-on-surface-variant text-label-sm font-label-sm mb-4">Unidad</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">$0.75</span>
+</div>
+<button class="absolute bottom-4 right-4 w-11 h-11 bg-primary text-on-primary-fixed rounded-full flex items-center justify-center hover:bg-primary-container transition-colors shadow-lg active:scale-95">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative bg-surface-container-high border border-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-white/30 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+<div class="relative aspect-square overflow-hidden bg-surface">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A macro photography shot of premium artisanal coffee beans scattered elegantly on a dark matte background. The lighting highlights the rich brown oils of the beans, contrasting sharply with the deep black surroundings. Sleek, high-end modern minimalist aesthetic designed for a dark mode premium grocery app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu7hr7Z7l3KcJyWuCRLrIzqMMy1UG8TmD_UxzvC7ArVTuM7hX13K5Ky8iE4ZakElRj37roqJ2nszOusgqLR2UPZZ0l7zq25GgYYeRtZdTC-TLZ2vXoHvnC7vDysQqwgr73_TKbYboJ5GAlohT7ziVHQOHeoHrjTx3BOE-ndnfDO-SzYS4eXdI3cZDns4cwCKhSuBE01QnsLJ4vzCnGq_TuDu1YXc7uVPw0KKFX26wTYIQ_AUIaY0xPJpd870BmC3dHVYexSr-8nA"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+<button class="px-6 py-2 bg-transparent border border-white/30 rounded text-primary font-label-md text-label-md hover:border-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-grow relative">
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Café Santo Domingo Reserve</h3>
+<p class="text-on-surface-variant text-label-sm font-label-sm mb-4">16 oz</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">$12.50</span>
+</div>
+<button class="absolute bottom-4 right-4 w-11 h-11 bg-primary text-on-primary-fixed rounded-full flex items-center justify-center hover:bg-primary-container transition-colors shadow-lg active:scale-95">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative bg-surface-container-high border border-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-white/30 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+<div class="relative aspect-square overflow-hidden bg-surface">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A stylish, dramatically lit bottle of aged dark rum standing on a sleek, reflective dark surface. The amber liquid glows softly against the pitch-black studio background. High-contrast lighting, sharp focus, premium beverage photography perfectly suited for a sophisticated dark theme digital storefront." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF693Q7vBH9qt5Vd6vDBxa7sOa2dqFh4agsVtjFTxycrZTnzM2QRoOEukIIb4LeCt_6nErCdFfCN_atjSPB9dhCTDAFnZPVjx2Atrc-3h7u382GLScbOhlEcr_YGDNRh4798IBKGvgc5tYMzdCxAVQZgmqwPEVoJpZtidnoHjx8ruQB3E_GSUwh1y4WTVBzRMnSqpSmEIXe95ZhLOpZEbIzminZUER3kCQ4H4vI10nNkyE9ZFQ5CeVjbVacX5IuwuZrJX14wIkAw"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+<button class="px-6 py-2 bg-transparent border border-white/30 rounded text-primary font-label-md text-label-md hover:border-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-grow relative">
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Ron Añejo Centenario</h3>
+<p class="text-on-surface-variant text-label-sm font-label-sm mb-4">750 ml</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">$24.99</span>
+</div>
+<button class="absolute bottom-4 right-4 w-11 h-11 bg-primary text-on-primary-fixed rounded-full flex items-center justify-center hover:bg-primary-container transition-colors shadow-lg active:scale-95">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative bg-surface-container-high border border-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-white/30 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+<div class="relative aspect-square overflow-hidden bg-surface">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A pristine, beautifully marbled cut of raw Wagyu beef ribeye placed on a dark, textured slate board. Shot from above with soft, directional lighting that highlights the marbling. Minimalist, premium food photography style against a dark, moody background, conveying high quality and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHK8NOMXFSa4IafyriTfowzGsnqDylH-4t2BI_LhUH8MDuOA1mST5ga3K3pUsMrhpbdhQ3B6xgtpy7qx4stZKIOasugfg8YZgf624qxgpPLv0szeV5_x5cv5OYUQEWUNrYcMuzkA6oxKRJFH0ct94poQd8TlAaUcEWwy0RLaCaoBNMgouuO70vF08iDLc9_kAIEm-ugrJqFVfK5WX6bN4twP3l4gCLZW2Zig1unECDxaLQSNDssqqoYKBjKJ4N0YYyNu97IzuWZA"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+<button class="px-6 py-2 bg-transparent border border-white/30 rounded text-primary font-label-md text-label-md hover:border-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-grow relative">
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Corte Premium Ribeye</h3>
+<p class="text-on-surface-variant text-label-sm font-label-sm mb-4">1 lb</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">$35.00</span>
+</div>
+<button class="absolute bottom-4 right-4 w-11 h-11 bg-primary text-on-primary-fixed rounded-full flex items-center justify-center hover:bg-primary-container transition-colors shadow-lg active:scale-95">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-white/10">
+<div class="font-headline-sm text-headline-sm font-bold text-primary mb-6 md:mb-0">Colmado</div>
+<nav class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0 font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</nav>
+<div class="text-on-surface-variant font-label-sm text-label-sm text-center md:text-right">
+            © 2024 Colmado Premium Grocery. All rights reserved.
+        </div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.style.transform = 'translateY(0)';
+                return;
+            }
+            
+            if (currentScroll > lastScroll && currentScroll > 88) {
+                // Scroll down
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body></html>
